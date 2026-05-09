@@ -179,19 +179,3 @@ SOFTWARE.
 Data channel dan stream yang digunakan berasal dari [IPTV-org/iptv](https://github.com/iptv-org/iptv) yang dirilis di bawah [The Unlicense](https://unlicense.org) — pada dasarnya public domain. Silakan merujuk ke repository tersebut untuk detail lebih lanjut.
 
 ---
-
-## Deployment
-
-Aplikasi ini siap di-deploy ke **Vercel** dengan konfigurasi yang sudah disertakan (`vercel.json`). Cukup hubungkan repository GitHub ke Vercel dan deploy otomatis akan berjalan.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
----
-
-## Kontribusi
-
-Kontribusi selalu diterima! Silakan buka issue atau pull request di [repository GitHub](https://github.com/maxnmrantau/iptv).
-
----
-
-Dibuat oleh [maxnmrantau](https://github.com/maxnmrantau)
