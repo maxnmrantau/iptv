@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0f1117;
+  --surface: #181c27;
+  --surface2: #1e2235;
+  --border: rgba(255, 255, 255, 0.07);
+  --accent: #63d2a8;
+  --accent2: #f5c542;
+  --accent-red: #ff6b6b;
+  --text: #e8eaf0;
+  --text-muted: #6b7280;
+  --accent-soft-10: rgba(99, 210, 168, 0.12);
+  --accent-soft-15: rgba(99, 210, 168, 0.18);
+  --accent-soft-20: rgba(99, 210, 168, 0.24);
+  --accent2-soft-20: rgba(245, 197, 66, 0.2);
+  --accent-red-soft-20: rgba(255, 107, 107, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.accent-text {
+  color: var(--accent) !important;
+}
+
+.accent2-text {
+  color: var(--accent2) !important;
+}
+
+.accent-red-text {
+  color: var(--accent-red) !important;
+}
+
+.accent-bg-soft-10 {
+  background-color: var(--accent-soft-10) !important;
+}
+
+.accent-bg-soft-15 {
+  background-color: var(--accent-soft-15) !important;
+}
+
+.accent-bg-soft-20 {
+  background-color: var(--accent-soft-20) !important;
+}
+
+.accent-bg {
+  background-color: var(--accent) !important;
+}
+
+.accent2-bg {
+  background-color: var(--accent2) !important;
+}
+
+.accent-red-bg {
+  background-color: var(--accent-red) !important;
+}
+
+.accent-border {
+  border-color: var(--accent) !important;
+}
+
+.accent2-border {
+  border-color: var(--accent2) !important;
+}
+
+.accent-red-border {
+  border-color: var(--accent-red) !important;
+}
+
+.accent2-bg-soft-20 {
+  background-color: var(--accent2-soft-20) !important;
+}
+
+.accent-red-bg-soft-20 {
+  background-color: var(--accent-red-soft-20) !important;
+}
+
+.accent-border-soft {
+  border-color: var(--accent-soft-20) !important;
+}
+
+.accent2-border-soft {
+  border-color: var(--accent2-soft-20) !important;
+}
+
+.accent-red-border-soft {
+  border-color: var(--accent-red-soft-20) !important;
+}
+
+.hover-accent-bg-soft-20:hover {
+  background-color: var(--accent-soft-20) !important;
+}
+
+.hover-accent-text:hover {
+  color: var(--accent) !important;
+}
+
+.hover-accent-border-soft:hover {
+  border-color: var(--accent-soft-20) !important;
+}
+
+.hover-accent-border:hover {
+  border-color: var(--accent) !important;
+}
+
+.hover-accent-red-bg-soft-20:hover {
+  background-color: var(--accent-red-soft-20) !important;
+}
+
+.hover-accent-red-text:hover {
+  color: var(--accent-red) !important;
+}
+
+.focus-accent:focus-visible {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px rgba(99, 210, 168, 0.15);
+}
+
+.equalizer-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.equalizer-bars span {
+  width: 3px;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent2) 100%);
+  animation: equalizer 0.8s ease-in-out infinite;
+}
+
+.equalizer-bars span:nth-child(2) {
+  animation-duration: 0.7s;
+  animation-delay: 0.12s;
+}
+
+.equalizer-bars span:nth-child(3) {
+  animation-duration: 0.9s;
+  animation-delay: 0.24s;
+}
+
+@keyframes equalizer {
+  0%, 100% { height: 6px; opacity: 0.6; }
+  30% { height: 14px; opacity: 1; }
+  60% { height: 10px; opacity: 0.8; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Scrollbar Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--surface2) transparent;
+}
